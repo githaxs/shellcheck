@@ -1,0 +1,16 @@
+task:
+  name: ShellCheck
+  slug: shellcheck
+  type: content
+  description: |
+    Fill me out
+  parameters:
+    - name: foo
+      description: bar
+
+  subscribed_events:
+    - pull_request.edited
+    - pull_request.opened
+    - pull_request.reopened
+    - pull_request.synchronize
+    - check_run.rerequested
