@@ -5,6 +5,7 @@ COPY --from=binary /bin/shellcheck /bin/
 
 RUN yum install -y git
 
+ARG GITHUB_TOKEN
 COPY requirements.txt .
 RUN python3.8 -m pip install -r requirements.txt
 
