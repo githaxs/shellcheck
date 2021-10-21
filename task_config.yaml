@@ -1,6 +1,12 @@
 name: ShellCheck
 slug: shellcheck
 type: content
+summary: Check your Shell Scripts for best practices
+description: Check your Shell Scripts for best practices
+default_configuration:
+  installation:
+    repo_languages:
+      - Shell
 subscribed_events:
   - pull_request.opened
   - pull_request.reopened
