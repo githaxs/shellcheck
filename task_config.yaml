@@ -1,8 +1,11 @@
+version: v2
 name: ShellCheck
 slug: shellcheck
 type: content
 summary: Check your Shell Scripts for best practices
 description: Check your Shell Scripts for best practices
+beta: true
+subscription_level: 1
 default_configuration:
   installation:
     repo_languages:
