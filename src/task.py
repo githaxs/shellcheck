@@ -20,8 +20,8 @@ class Task(TaskInterface):
     type = TaskTypes.CODE_FORMAT
 
 
-    command = "shellcheck"
-    file_filters = ".*.sh$"
+    source_script_path = "%s/task.sh" % os.path.dirname(__file__)
+    handler = "task"
 
     def execute(self, github_body, settings) -> bool:
         pass
