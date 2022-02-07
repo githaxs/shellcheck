@@ -2,9 +2,11 @@ version: v2
 name: ShellCheck
 slug: shellcheck
 type: content
-summary: Check your Shell Scripts for best practices
-description: Check your Shell Scripts for best practices
-beta: true
+summary: A shell script static analysis tool
+description: |
+  <a href="https://github.com/koalaman/shellcheck">ShellCheck</a> helps you write better Shell scripts. It points out obvious and nuanced syntax
+  issues that could cause your script to fail.
+beta: false
 subscription_level: 1
 default_configuration:
   installation:
