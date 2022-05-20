@@ -1,27 +1,14 @@
 import json
 import os
 
-from task_interfaces import TaskInterface, SubscriptionLevels, TaskTypes
+from task_interfaces import StaticAnalysisTask, SubscriptionLevels
 
 
-class Task(TaskInterface):
+class Task(StaticAnalysisTask):
     """
     Verifies shell scripts follow best practices.
     """
 
     name = "ShellCheck"
-    slug = "shellcheck"
-    pass_summary = ""
-    pass_text = ""
-    fail_summary = "All files not formatted correctly."
-    fail_text = ""
     subscription_level = SubscriptionLevels.STARTUP
-    actions = None
-    type = TaskTypes.CODE_FORMAT
-
-
     source_script_path = "%s/task.sh" % os.path.dirname(__file__)
-    handler = "task"
-
-    def execute(self, github_body, settings) -> bool:
-        pass
